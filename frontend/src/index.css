@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-colors duration-200;
+  }
+}
+
+.gov-gradient-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+}
+
+.gov-badge-saffron {
+  @apply bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/30;
+}
+
+.gov-badge-green {
+  @apply bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30;
+}
+
+.gov-badge-navy {
+  @apply bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/30;
+}
+
+.gov-badge-red {
+  @apply bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/30;
+}
+
+.protected-document-viewer {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media print {
+  .protected-document-viewer {
+    display: none !important;
+  }
+}

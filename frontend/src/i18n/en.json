@@ -1,0 +1,32 @@
+{
+  "app_name": "RAKSHA DOC",
+  "app_tagline": "Secure Distribution. Verifiable Provenance. Accountable Access.",
+  "department": "Ministry of Defence & Security Agencies",
+  "search_placeholder": "Search portal pages...",
+  "air_gapped_status": "Air-Gapped Cluster Operational",
+  "nav": {
+    "dashboard": "Overview Dashboard",
+    "documents": "Classified Document Vault",
+    "distribution": "Secure Distribution",
+    "decryption": "My Assigned Documents",
+    "forensics": "Forensic Investigation Workbench",
+    "ledger": "Immutable Provenance Ledger",
+    "alerts": "Security Monitoring & Alerts",
+    "sih_demo": "SIH Jury Demonstration Mode",
+    "access_review": "Account Access Review"
+  },
+  "roles": {
+    "SUPER_ADMIN": "Super Administrator",
+    "DEPT_ADMIN": "Department Admin / Document Owner",
+    "RECIPIENT": "Authorized Officer",
+    "INVESTIGATOR": "Forensic Investigator"
+  },
+  "dashboard": {
+    "total_docs": "Total Classified Documents",
+    "encrypted_docs": "NIST ML-KEM Encrypted",
+    "recipients": "Active Authorized Officers",
+    "decryptions": "Verified Decryption Events",
+    "ledger_status": "Provenance Ledger Integrity",
+    "alerts_status": "Active Security Alerts"
+  }
+}

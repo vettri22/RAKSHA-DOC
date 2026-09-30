@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  raksha-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: raksha_doc_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - RAKSHA_SECRET_KEY=raksha-doc-sih-2026-air-gapped-secret-key
+      - DATABASE_URL=sqlite:////app/storage/raksha_doc.db
+    volumes:
+      - ./storage:/app/storage
+    restart: unless-stopped
+
+  raksha-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: raksha_doc_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - raksha-backend
+    restart: unless-stopped

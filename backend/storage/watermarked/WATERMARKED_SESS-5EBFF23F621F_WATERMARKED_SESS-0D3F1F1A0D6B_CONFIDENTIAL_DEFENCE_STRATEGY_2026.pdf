@@ -1,0 +1,236 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+/RAKSHAForensicPayload (eyJzeW5jIjogIlJBS1NIQV9GT1JFTlNJQ19TWU5DX3YxIiwgImZvcmVuc2ljX2lkIjogIlJBS1MtNzA1NjQ4RjM2QUU0QTMyQTgwRTE5M0U5IiwgImRvY3VtZW50X2lkIjogImJmZWFmZTM4LTgwZDQtNDE5NC05ZDcyLTllYWZmMzk2Y2U4MSIsICJyZWNpcGllbnRfaWQiOiAiZjk2ODFlZGUtZGFjNi00MDZmLTkwMTQtYzY2YzI5M2M4ZTNiIiwgInNlc3Npb25faWQiOiAiU0VTUy01RUJGRjIzRjYyMUYiLCAidGltZXN0YW1wIjogIjIwMjYtMDktMjlUMTg6Mjg6MDEuMDExOTIyIiwgInBhcml0eSI6ICJjODBiMjNkM2M1ZDUyYWE1In0\075)
+/RAKSHASyncMarker (RAKSHA\137FORENSIC\137SYNC\137v1)
+/RAKSHAForensicID (RAKS\055705648F36AE4A32A80E193E9)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.005
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F1-1 8 0 R
+/F2 9 0 R
+/F3 10 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 2487
+>>
+stream
+q
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 692 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 18 Tf 22 TL (CONFIDENTIAL \227 MINISTRY OF DEFENCE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 676 cm
+Q
+q
+1 0 0 1 78 646 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (SUBJECT: STRATEGIC CYBER DEFENCE DIRECTIVE 2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 630 cm
+Q
+q
+1 0 0 1 78 606 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (This document outlines post-quantum cryptographic standards, immutable provenance logging, and) Tj T* (forensic watermarking protocols for classified document distribution across defence networks.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 591 cm
+Q
+q
+1 0 0 1 78 579 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (1. All classified document distribution must encapsulate content keys using NIST ML-KEM-768.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 555 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (2. Authorized officer decryptions require mandatory ML-DSA digital signatures and offline provenance) Tj T* (logging.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 543 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (3. Watermark identifiers are recipient-specific and cryptographically verifiable.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 523 cm
+Q
+q
+1 0 0 1 78 497 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 12 Tf 14 TL (CLASSIFICATION: SECRET / EYES ONLY) Tj T* ET
+Q
+Q
+ 
+
+Q
+q
+0.0 0.0 612 792 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+/gRLs0 gs
+BT
+/F1-0 6 Tf
+7.2 TL
+ET
+BT
+1 0 0 1 10 10 Tm
+(\137\137RAKSHA\137PAYLOAD\072eyJzeW5jIjogIlJBS1NIQV9GT1JFTlNJQ19TWU5DX3YxIiwgImZvcmVuc2ljX2lkIjogIlJBS1MtMjFENEFCODdFQjMyNDdDRUJCNDQwQzJBIiwgImRvY3VtZW50X2lkIjogImVjYzM0ZjU5LWUwNWItNDc4OS04MGVlLWE2ZTczOTAxOTY0NCIsICJyZWNpcGllbnRfaWQiOiAiZjk2ODFlZGUtZGFjNi00MDZmLTkwMTQtYzY2YzI5M2M4ZTNiIiwgInNlc3Npb25faWQiOiAiU0VTUy0wRDNGMUYxQTBENkIiLCAidGltZXN0YW1wIjogIjIwMjYtMDktMjlUMTc6NDk6NTQuMDg0OTEzIiwgInBhcml0eSI6ICI1OGM3NTAxM2Y2NTliMGM1In0\075\137\137) Tj
+T*
+ET
+Q
+
+Q
+q
+0.0 0.0 612 792 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-1 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+/gRLs0 gs
+BT
+/F1-1 6 Tf
+7.2 TL
+ET
+BT
+1 0 0 1 10 10 Tm
+(\137\137RAKSHA\137PAYLOAD\072eyJzeW5jIjogIlJBS1NIQV9GT1JFTlNJQ19TWU5DX3YxIiwgImZvcmVuc2ljX2lkIjogIlJBS1MtNzA1NjQ4RjM2QUU0QTMyQTgwRTE5M0U5IiwgImRvY3VtZW50X2lkIjogImJmZWFmZTM4LTgwZDQtNDE5NC05ZDcyLTllYWZmMzk2Y2U4MSIsICJyZWNpcGllbnRfaWQiOiAiZjk2ODFlZGUtZGFjNi00MDZmLTkwMTQtYzY2YzI5M2M4ZTNiIiwgInNlc3Npb25faWQiOiAiU0VTUy01RUJGRjIzRjYyMUYiLCAidGltZXN0YW1wIjogIjIwMjYtMDktMjlUMTg6Mjg6MDEuMDExOTIyIiwgInBhcml0eSI6ICJjODBiMjNkM2M1ZDUyYWE1In0\075\137\137) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Helvetica-BoldOblique
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000015 00000 n 
+0000000593 00000 n 
+0000000652 00000 n 
+0000000701 00000 n 
+0000000997 00000 n 
+0000003536 00000 n 
+0000003643 00000 n 
+0000003750 00000 n 
+0000003857 00000 n 
+0000003969 00000 n 
+trailer
+<<
+/Size 11
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+4089
+%%EOF
