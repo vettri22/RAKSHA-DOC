@@ -10,8 +10,8 @@ import {
   Search,
   Link,
   ShieldAlert,
-  PlayCircle
-  ,UserCog
+  PlayCircle,
+  UserCog
 } from 'lucide-react';
 
 export const Sidebar: React.FC = () => {

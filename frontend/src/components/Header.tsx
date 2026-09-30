@@ -37,7 +37,6 @@ export const Header: React.FC = () => {
     <header className="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-40 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         
-        {/* Left: Branding & Dept */}
         <div className="flex items-center space-x-3">
           <div className="bg-gradient-to-r from-amber-500 to-amber-600 p-2 rounded-lg text-slate-950 shadow">
             <Shield className="w-6 h-6 stroke-[2.5]" />
@@ -89,7 +88,6 @@ export const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* Right: Controls & User Profile */}
         <div className="flex items-center space-x-3 sm:space-x-4">
           
           {/* Air-Gapped Status Badge */}

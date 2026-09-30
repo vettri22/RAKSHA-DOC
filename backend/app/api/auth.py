@@ -111,23 +111,6 @@ def login(req: LoginRequest, request: Request, db: Session = Depends(get_db)):
     ).all()
     other_device_session = next((session for session in active_sessions if session.device_id != req.device_id), None)
     if other_device_session:
-        event = AuthenticationEvent(
-            user_id=user.id, username=user.username, event_type="SECOND_DEVICE_BLOCKED",
-            outcome="ADMIN_REVIEW_REQUIRED", ip_address=ip_address, user_agent=user_agent,
-            device_id=req.device_id,
-            details=f"An active session already exists on another device; active session started {other_device_session.created_at.isoformat()}"
-        )
-        db.add(event)
-        if user.role == ROLE_SUPER_ADMIN:
-            db.add(SecurityAlert(
-                severity="HIGH", alert_type="SECOND_DEVICE_LOGIN_BLOCKED",
-                title=f"Second-device login blocked: {user.username}",
-                description=f"A second device attempted to sign in to the super-admin account from {ip_address or 'unknown IP'}.",
-                related_user_id=user.id
-            ))
-            db.commit()
-            raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="This account already has an active session on another device")
-
         approval = db.query(LoginApprovalRequest).filter(
             LoginApprovalRequest.user_id == user.id,
             LoginApprovalRequest.device_id == req.device_id,
@@ -146,6 +129,12 @@ def login(req: LoginRequest, request: Request, db: Session = Depends(get_db)):
                 description=f"A second device attempted to sign in to {user.username} from {ip_address or 'unknown IP'}. Review request {approval.id}.",
                 related_user_id=user.id
             ))
+        db.add(AuthenticationEvent(
+            user_id=user.id, username=user.username, event_type="SECOND_DEVICE_BLOCKED",
+            outcome="ADMIN_REVIEW_REQUIRED", ip_address=ip_address, user_agent=user_agent,
+            device_id=req.device_id,
+            details=f"An active session already exists on another device; active session started {other_device_session.created_at.isoformat()}"
+        ))
         db.commit()
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
@@ -184,6 +173,14 @@ def login(req: LoginRequest, request: Request, db: Session = Depends(get_db)):
                 detail=f"Admin approval is required before sign-in. Request: {approval.id}"
             )
         approval.status = "USED"
+    else:
+        admin_approval = db.query(LoginApprovalRequest).filter(
+            LoginApprovalRequest.user_id == user.id,
+            LoginApprovalRequest.device_id == req.device_id,
+            LoginApprovalRequest.status == "APPROVED"
+        ).order_by(LoginApprovalRequest.requested_at.desc()).first()
+        if admin_approval:
+            admin_approval.status = "USED"
 
     for active_session in active_sessions:
         active_session.active = False
