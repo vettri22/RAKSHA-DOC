@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: raksha-doc
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    disk:
+      name: raksha-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: RAKSHA_SECRET_KEY
+        generateValue: true
+      - key: RAKSHA_ADMIN_PASSWORD
+        generateValue: true
+      - key: RAKSHA_STORAGE_DIR
+        value: /var/data

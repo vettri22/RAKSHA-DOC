@@ -1,0 +1,10 @@
+.git
+.gitignore
+frontend/node_modules
+frontend/dist
+backend/__pycache__
+backend/**/__pycache__
+backend/raksha_doc.db
+backend/storage
+storage
+*.pyc

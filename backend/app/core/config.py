@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
-STORAGE_DIR = BASE_DIR / "storage"
+STORAGE_DIR = Path(os.getenv("RAKSHA_STORAGE_DIR", str(BASE_DIR / "storage")))
 
 DOCUMENTS_DIR = STORAGE_DIR / "documents"
 ENCRYPTED_DIR = STORAGE_DIR / "encrypted"
@@ -17,7 +17,7 @@ SECRET_KEY = os.getenv("RAKSHA_SECRET_KEY", "raksha-doc-sih-2026-super-secret-ke
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 24 hours for demo ease
 
-DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{BASE_DIR}/raksha_doc.db")
+DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{STORAGE_DIR / 'raksha_doc.db'}")
 
 APP_NAME = "RAKSHA DOC"
 APP_TAGLINE = "Secure Distribution. Verifiable Provenance. Accountable Access."

@@ -92,7 +92,9 @@ def seed_demo_environment(
                 username=u["username"],
                 full_name=u["full_name"],
                 email=u["email"],
-                hashed_password=get_password_hash("admin123"),
+                hashed_password=get_password_hash(
+                    os.getenv("RAKSHA_ADMIN_PASSWORD", "admin123") if u["username"] == "admin" else "admin123"
+                ),
                 role=u["role"],
                 department_id=dept.id,
                 ml_kem_public_key=PQCEngine.encode_base64(kem_pk),

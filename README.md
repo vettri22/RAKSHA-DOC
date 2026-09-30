@@ -55,8 +55,15 @@ npm run dev
 
 Open `http://localhost:3000` in your browser.
 
+### Deploy to Render
+- In Render, choose **New → Blueprint** and connect this repository; `render.yaml` defines the web service and persistent disk.
+- If creating a Web Service manually, use the repository root (`.`) as the Root Directory, select **Docker** as the runtime, set the Dockerfile path to `./Dockerfile`, and the Docker context to `.`. No separate install, build, or output-directory values are needed; the Dockerfile builds the Vite app and runs FastAPI.
+- The persistent disk is mounted at `/var/data`; it stores SQLite and uploaded/generated files. Keep it attached to the service.
+- On first deployment, retrieve `RAKSHA_ADMIN_PASSWORD` from the Render service environment and use it with username `admin`. Render also generates the stable `RAKSHA_SECRET_KEY`.
+- This setup deploys the UI and API on one origin. Do not deploy only the `frontend` folder to Vercel for this configuration.
+
 ### First Login & Access Approval
-- Sign in first as the seeded super-admin: `admin` / `admin123`.
+- Local development seeds the super-admin as `admin` / `admin123`. Render generates `RAKSHA_ADMIN_PASSWORD`; use its value from the service's Environment settings for the initial super-admin login.
 - Open **Account Access Review**. Review each non-admin sign-in request and approve or deny it; the user must retry sign-in after approval.
 - Non-admin users require approval for every new sign-in. The seeded demo super-admin is the only account that does not require approval.
 - Four consecutive incorrect passwords lock an account. A super-admin must review and unlock it in **Account Access Review**.
