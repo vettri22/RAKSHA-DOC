@@ -84,5 +84,3 @@ Open `http://localhost:3000` in your browser.
 
 ---
 
-## 🏆 SIH Jury Presentation Guide
-Navigate to the **SIH Jury Demonstration Mode** menu item in the application, and click **"Run Live 3-Officer Demo Simulation"** to execute the end-to-end multi-recipient encryption, independent watermarked decryptions, leak attribution, and tamper verification scenario in one click!
